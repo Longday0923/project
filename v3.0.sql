@@ -95,7 +95,7 @@ create table coins(
 	primary key (av , uid)
 );
 
---follow
+--follow: UID1 follows UID2
 create table follow(
 	UID1 varchar(9) references users on delete cascade,
 	UID2 varchar(9) references users on delete cascade,
